@@ -1,9 +1,13 @@
 <!doctype html>
+
 <html lang="en-us">
 
 <head>
+
   <meta charset="UTF-8">
+
   <title>Crystal Collector Game | Jonathan Ansley</title>
+
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
@@ -22,44 +26,56 @@
 </head>
 
 <body>
-  
 
   <h1>Crystal Collector Game</h1>
 
   <h2>click a crystal</h2>
 
-  <p>
-   * There will be four crystals displayed as buttons on the page.
+<p>
+  The player wins if their total score matches the random number from the beginning of the game.
+</p>
 
-   * The player will be shown a random number at the start of the game.
-
-   * When the player clicks on a crystal, it will add a specific amount of points to the player's total score. 
-
-     * Your game will hide this amount until the player clicks a crystal.
-     * When they do click one, update the player's score counter.
-
-   * The player wins if their total score matches the random number from the beginning of the game.
-
+<p>
    * The player loses if their score goes above the random number.
+</p>
 
+<p>
    * The game restarts whenever the player wins or loses.
+</p>
 
+<p>
      * When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
-
-   * The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
-
-* The random number shown at the start of the game should be between 19 - 120.
-
-* Each crystal should have a random hidden value between 1 - 12.
 </p>
 
   <p id="goal"></p>
 
-  <p id="your-number"></p>
+  <p id="user-number"></p>
 
   <p id="wins"></p>
 
   <p id="losses"></p>
+
+  <!-- crystals -->
+      <div id="wrapper">
+
+      <!-- Div containing our controls -->
+      <div id="crystals">
+        <img id = "crystal-1" class = "crystal-image" src = "http://www.minerals.net/MineralImages/realgar-shimen-hunan-china.jpg" alt="picture of crystal-1">
+
+        <img id = "crystal-2" class = "crystal-image" src = "https://upload.wikimedia.org/wikipedia/commons/5/55/Malachite,_Zaire.jpg" alt="picture of crystal-2">
+
+        <img id = "crystal-3" class = "crystal-image" src = "http://2.bp.blogspot.com/-idB6juF_F0Q/TuOFrB_u6eI/AAAAAAAAARs/hNGF9crwA0I/s1600/DSC_0247.JPG" alt="picture of crystal-3">
+
+        
+        <img id = "crystal-4" class = "crystal-image" src = "http://www.pxleyes.com/images/contests/crystal/fullsize/crystal_4babd8c756356_hires.jpg" alt="picture of crystal-4">
+
+<!--         <button id="crystal-1">crystal #1</button>
+        <button id="crystal-2">crystal #2</button>
+        <button id="crystal-3">crystal #3</button>
+        <button id="crystal-4">crystal #4</button>
+ -->      </div>
+
+    </div>
 
   <!-- jQuery -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
